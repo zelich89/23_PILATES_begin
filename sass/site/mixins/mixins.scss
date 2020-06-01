@@ -18,9 +18,9 @@
   }
 }
 
-@mixin font ($a, $b) {
-  font-size: $a;
-  line-height: $b;
+@mixin font ($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 @mixin square-size ($wh) {

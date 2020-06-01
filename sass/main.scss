@@ -1,16 +1,25 @@
-@import "site/utilites/utilites";
+// Файл обнуляющих стилей
+@import "site/nullstyle";
 
-@import "site/style";
-@import "site/backgrounds";
-@import "site/borders";
-@import "site/buttons";
-@import "site/colors";
-@import "site/fonts";
-@import "site/links";
-@import "site/menu";
-@import "site/sizes";
-@import "site/svgs";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "site/null-bs";
+
+@import "site/mixins/mixins";
+
 @import "site/variables";
-@import "site/z-index";
+@import "site/style";
+@import "site/button";
+@import "site/colors";
+@import "site/_types";
+@import "site/sizes";
+@import "site/maket";
+@import "site/logo";
 
-//@import "site/null-bs";
+@import "site/extended";
+
+@import "site/content";
+@import "site/header";
+@import "site/main-sect";
+@import "site/about";
+@import "site/time";
+@import "site/how";

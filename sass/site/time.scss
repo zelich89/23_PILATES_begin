@@ -1,0 +1,162 @@
+.time {
+  //display: none;
+  border: 1px solid #e83e8c;
+  &__warps {
+    position: relative;
+  }
+
+  &__title {
+    @extend .titles;
+    &--indent {
+      margin-bottom: 60px;
+      @media (max-width: $desktop-width) {
+        margin-bottom: 45px;
+      }
+      @media (max-width: $tablet-width) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -11px;
+    @media (max-width: $desktop-width) {
+      margin: 0 -5px;
+    }
+    @media (max-width: $tablet-width) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    width: 33.3%;
+    padding-right: 11px;
+    padding-left: 11px;
+    @media (max-width: $desktop-width) {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+    @media (max-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+  &__content {
+    position: relative;
+    min-height: 140px;
+    border-radius: 5px;
+    padding: 185px 70px 90px;
+    color: $white;
+    @media (max-width: $desktop-width) {
+      padding: 97px 25px 40px;
+    }
+    & * {
+      position: relative;
+      z-index: 1;
+    }
+    &--first {
+      background-color: rgba($primary, .5);
+    }
+    &--second {
+      background-color: rgba($primary, .75);
+    }
+    &--third {
+      background-color: rgba($primary, .9);
+    }
+  }
+  &__num {
+    z-index: 0;
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    font-family: 'Proxima Nova';
+    @include font(210px, 1);
+    font-weight: 900;
+    color: rgba($white, .5);
+    @media (max-width: $desktop-width) {
+      @include font(115px, 1);
+    }
+  }
+  &__word {
+    text-transform: uppercase;
+    @include font(14px, 16px);
+    font-weight: 500;
+    @media (max-width: $desktop-width) {
+      @include font(12px, 14px);
+      font-weight: 400;
+    }
+  }
+  &__name {
+    text-transform: uppercase;
+    @include font(28px, 32px);
+    font-weight: 500;
+    @media (max-width: $desktop-width) {
+      @include font(18px, 24px);
+    }
+    &--indent {
+      padding-bottom: 20px;
+      @media (max-width: $desktop-width) {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  &__price {
+    font-family: 'SFUIText';
+    font-weight: bold;
+    white-space: nowrap;
+    @include font(24px, 32px);
+    @media (max-width: $desktop-width) {
+      @include font(16px, 20px);
+    }
+    &--indent {
+      padding-bottom: 20px;
+      @media (max-width: $desktop-width) {
+        padding-bottom: 15px;
+      }
+    }
+  }
+  &__timetable {
+
+    &--indent {
+      padding-bottom: 35px;
+    }
+    @media (max-width: $desktop-width) {
+      padding-bottom: 25px;
+    }
+  }
+  &__date {
+    font-family: 'SFUIText';
+    font-weight: 500;
+    @include font(18px, 30px);
+    @media (max-width: $desktop-width) {
+      @include font(16px, 28px);
+    }
+    &--indent:not(:last-child) {
+      padding-bottom: 5px;
+    }
+  }
+  &__day {
+    padding-right: 15px;
+    @media (max-width: $desktop-width) {
+      padding-right: 5px;
+    }
+  }
+  &__button {
+    display: block;
+    text-align: center;
+    font-family: 'SFUIText';
+    padding: 5px;
+    font-weight: 500;
+    @include font(18px, 42px);
+    @media (max-width: $desktop-width) {
+      font-weight: 400;
+      @include font(14px, 18px);
+      display: inline-block;
+      padding: 5px 24px;
+    }
+  }
+
+  &--indent {
+    padding-bottom: 125px;
+  }
+
+}
